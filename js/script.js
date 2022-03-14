@@ -59,7 +59,7 @@ const app = new Vue({
 
         },
         deleteTodo(index) {
-            this.arrTodos.splice(index, 1)
+            this.arrTodos.splice(index, 1);
         },
     }
   })

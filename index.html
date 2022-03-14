@@ -23,13 +23,16 @@
         </div>
 
         <ul>
-            <li v-for="todo,index in arrTodos" @click="todo.done == true ? todo.done = false : todo.done = true" class="todo" :class="todo.done == true ? 'sbarrato' : '' ">
-                {{todo.text}}
+            
+            <li v-for="todo,index in arrTodos" class="todo" :class="todo.done == true ? 'sbarrato' : '' ">
+                
+                <span  @click="todo.done == true ? todo.done = false : todo.done = true">
+                    {{todo.text}}
+                </span>
+                
                 <button class="btn-delete" @click="deleteTodo(index)">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-            </li>
-
         </ul>
 
 
