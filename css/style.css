@@ -14,6 +14,7 @@
 
 .cont-input {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .input-user {
@@ -22,7 +23,6 @@
 
     border-radius: 10px;
     font-size: 1.5em;
-
 }
 
 .btn-add {
@@ -30,7 +30,6 @@
     border-radius: 10px;
     font-size: 1.5em;
     cursor: pointer;
-
 }
 
 ul {
@@ -39,15 +38,17 @@ ul {
     border-radius: 20px;
     padding: 3rem;
     font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
 }
 
 .todo {
     width: 700px;
-
     list-style: none;
-    padding: 0.6rem 0;
     border-bottom: 1px solid gray;
     display: flex;
+
 }
 
 .btn-delete {
@@ -69,4 +70,7 @@ ul {
 .todo-text {
     display: inline-block;
     width: 100%;
+    height: 100%;
+    padding: 0.6rem 0;
+
 }
