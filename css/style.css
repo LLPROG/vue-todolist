@@ -12,6 +12,10 @@
     padding: 3rem;
 }
 
+.cont-input {
+    display: flex;
+}
+
 .input-user {
     padding: 1rem;
     margin-right: 0.5rem;
@@ -25,11 +29,11 @@
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.5em;
+    cursor: pointer;
 
 }
 
 ul {
-    min-width: 700px;
     margin-top: 3rem;
     background-color: rgb(224, 222, 222);
     border-radius: 20px;
@@ -38,6 +42,8 @@ ul {
 }
 
 .todo {
+    width: 700px;
+
     list-style: none;
     padding: 0.6rem 0;
     border-bottom: 1px solid gray;
@@ -46,11 +52,9 @@ ul {
 
 .btn-delete {
     margin-left: auto;
-}
-
-.btn-delete {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .sbarrato {

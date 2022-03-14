@@ -15,16 +15,17 @@
 
         <div class="cont-input">
             <label for="text"></label>
-            <input type="text" placeholder="Nuovo Todo" class="input-user" >
-            <button class="btn-add">
+            <input type="text" placeholder="Nuovo Todo" class="input-user" v-model.trim="value">
+
+            <button class="btn-add" @click="addTodo()">
                 Aggiungi
             </button>
         </div>
 
         <ul>
-            <li v-for="todo in arrTodos" class="todo" :class="todo.done == false ? 'sbarrato' : '' ">
+            <li v-for="todo,input in arrTodos" class="todo" :class="todo.done == true ? 'sbarrato' : '' ">
                 {{todo.text}}
-                <button class="btn-delete">
+                <button class="btn-delete" @click="deleteTodo(input)">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </li>
