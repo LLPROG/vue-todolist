@@ -64,5 +64,9 @@ ul {
 
 .fa-xmark {
     font-size: 1.5em;
+}
 
+.todo-text {
+    display: inline-block;
+    width: 100%;
 }
