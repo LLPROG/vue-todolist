@@ -24,9 +24,9 @@
 
         <ul>
             
-            <li v-for="todo,index in arrTodos" class="todo" :class="todo.done == true ? 'sbarrato' : '' ">
+            <li v-for="todo,index in arrTodos" class="todo" :class="{sbarrato: todo.done}"  >
 
-                <span class="todo-text"  @click="todo.done == true ? todo.done = false : todo.done = true">
+                <span class="todo-text"  @click="done(todo)">
                     {{todo.text}}
                 </span>
                 
